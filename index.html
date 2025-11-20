@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小型產品展示網頁</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>我的產品展示網頁</h1>
+        <p>簡單的 HTML + CSS 練習示範</p>
+    </header>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="https://picsum.photos/300/200?random=1" alt="Product 1">
+            <h3>產品 A</h3>
+            <p>這是產品的簡短介紹。</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://picsum.photos/300/200?random=2" alt="Product 2">
+            <h3>產品 B</h3>
+            <p>這是產品的簡短介紹。</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://picsum.photos/300/200?random=3" alt="Product 3">
+            <h3>產品 C</h3>
+            <p>這是產品的簡短介紹。</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 我的產品展示網頁</p>
+    </footer>
+</body>
+</html>
+
+/* 頁面基本設定 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* 兩張背景圖：第一張紫色傘是主背景，第二張深藍色傘在中間偏右 */
+    background-image: 
+        url("紫色傘圖片網址"), 
+        url("深藍色傘圖片網址");
+
+    background-size: 
+        cover,         /* 主背景滿版 */
+        45%;           /* 深藍色傘縮小到 45% */
+
+    background-position: 
+        center,        /* 主背景置中 */
+        70% center;    /* 深藍色傘略偏右 (70%)、垂直置中 */
+
+    background-repeat: no-repeat, no-repeat;
+}
